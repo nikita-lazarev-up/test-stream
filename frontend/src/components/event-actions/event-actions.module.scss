@@ -1,0 +1,45 @@
+.event_actions {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    display: flex;
+
+    input {
+      display: none;
+
+      &:checked ~ .event_actions__btn {
+        position: relative;
+        background: #e8edf6;
+        border-color: #bbc4cf;
+        color: #2a6dca;
+        z-index: 1;
+        cursor: default;
+      }
+    }
+
+    & + & {
+      margin-left: -1px;
+    }
+
+    &:first-child .event_actions__btn {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child .event_actions__btn {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+
+  &__btn {
+    color: #4b5d6f;
+    background: #fff;
+    border: 1px solid #d8dcdf;
+    padding: 12px 20px;
+    cursor: pointer;
+    min-width: 90px;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

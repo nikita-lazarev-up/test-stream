@@ -1,0 +1,23 @@
+.search_events {
+  position: relative;
+  &__icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__input {
+    border-radius: 6px;
+    border: 1px solid #d8dcdf;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 20px 13px 40px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,41 @@
+.event_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.event_list_item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f2f4;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 35px;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__type {
+    text-transform: uppercase;
+    color: #5d6d7d;
+    font-weight: 300;
+    min-width: 80px;
+    padding-right: 20px;
+  }
+
+  &__value {
+    flex-grow: 1;
+    color: #475a6c;
+  }
+
+  &__time {
+    color: #475a6c;
+  }
+}

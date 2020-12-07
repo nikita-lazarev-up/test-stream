@@ -1,0 +1,29 @@
+.event_stream {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 74px;
+
+  &__header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f7f8fa;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 74px;
+    z-index: 2;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d6dee4;
+  }
+
+  &__actions {
+    margin-right: 15px;
+  }
+
+  &__search {
+    width: 100%;
+  }
+}
